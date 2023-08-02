@@ -1,16 +1,17 @@
 public class Student {
+    public int contains;
     private int id;
     private String name;
     private String surname;
-    private Gender gender;
+    private String gender;
     private int estimation;
     private int age;
 
-    public Student(int id, String name, String surname, Gender gender, int estimation, int age) {
+    public Student(int id, String name, String surname, String gender, int estimation, int age) {
         this.id = id;
         this.name = name;
         this.surname = surname;
-        this.gender = gender;
+        this.gender = gender.toString();
         this.estimation = estimation;
         this.age = age;
     }
@@ -39,11 +40,11 @@ public class Student {
         this.surname = surname;
     }
 
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
